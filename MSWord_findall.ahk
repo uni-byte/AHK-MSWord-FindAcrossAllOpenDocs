@@ -9,7 +9,7 @@ Search := oWord.Selection.Text
 Clipboard := Search
 Array := []
 loop % oWord.Documents.Count {
-	Doc 	:= oWord.documents(A_Index)
+	Doc 	:= oWord.Documents(A_Index)
 	Name	:= Doc.fullname
 	Text 	:= Doc.Range.Text
 	If InStr(Text, Search , 1)  {
