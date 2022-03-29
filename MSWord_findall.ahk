@@ -27,7 +27,7 @@ BtnActive:
 	{
 	SetTitleMatchMode, 2
 	RegExMatch(A_GuiControl, "\d+$", n) ; Gets button's variable (Kno1, Kno2, etc...), extracts integer and assigns it to 'n'
-	WordFD_Path := StrSplit(Array[n], "\")
+	WordFD_Path := StrSplit(Array[n], ["/", "\"])
 	WordFD_Path := WordFD_Path[WordFD_Path.Count()]
 	if WinExist(WordFD_Path)
 		WinActivate
