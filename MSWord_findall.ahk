@@ -1,3 +1,6 @@
+#NoEnv
+#SingleInstance Force
+
 FindInAllOpenDocuments() {
 global
 Try
